@@ -7,7 +7,7 @@ const DetailsByIDService= async (Request,DataModel) => {
 
         const ObjectId = mongoose.Types.ObjectId;
         let QueryObject={};
-        QueryObject['_id']=ObjectId(DetailsID);
+        QueryObject['_id']=new ObjectId(DetailsID);
         QueryObject['UserEmail']=UserEmail;
 
 
